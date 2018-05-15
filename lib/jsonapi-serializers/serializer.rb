@@ -226,6 +226,7 @@ module JSONAPI
           many_relationships = serializer.has_many_relationships
           
           puts "Plugin"
+          puts serializer.inspect
           puts unformatted_attr_name.inspect
           puts one_relationships.inspect
           puts many_relationships.inspect
