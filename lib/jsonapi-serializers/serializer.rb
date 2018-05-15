@@ -224,6 +224,12 @@ module JSONAPI
           is_valid_attr = false
           one_relationships = serializer.has_one_relationships
           many_relationships = serializer.has_many_relationships
+          
+          puts "Plugin"
+          puts unformatted_attr_name.inspect
+          puts one_relationships.inspect
+          puts many_relationships.inspect
+          
           if one_relationships.key?(unformatted_attr_name)
             is_valid_attr = true
             attr_data = one_relationships[unformatted_attr_name]
